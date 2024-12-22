@@ -17,14 +17,14 @@ ovz，lxc虚拟化的vps，在纯净系统首次安装后内存占用约为27m�
 
 # 安装&升级
 
-```
-apk add curl&&apk add bash && bash <(curl -Ls https://raw.githubusercontent.com/Lynn-Becky/Alpine-x-ui/main/alpine-xui.sh)
-```
+````
+apk 添加curl&&apk 添加bash && bash <(curl -Ls https://raw.githubusercontent.com/smileboy86/Alpine-x-ui/main/alpine-xui.sh)
+````
 仅支持Alpine linux 安装  
 支持x86与arm64架构的小鸡安装
 # 部分问题解决方案
 若跑太猛，面板crashed了，请使用以下命令重启面板
-```
-/etc/init.d/x-ui restart
-```  
+````
+/etc/init.d/x-ui 重新启动
+````  
 感谢F大编译维护的x-ui
