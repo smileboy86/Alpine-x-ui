@@ -4,7 +4,7 @@ green='\033[0;32m'
 yellow='\033[0;33m'
 plain='\033[0m'
 echo -e "${green}Alpine-x-ui 安装脚本v0.4 "
-echo -e "${green}项目地址：https://github.com/Lynn-Becky/Alpine-x-ui"
+echo -e "${green}项目地址：https://github.com/smileboy86/Alpine-x-ui"
 read -p "回车键继续..."
 echo -e "x-ui install for alpine"
 
@@ -25,10 +25,10 @@ mkdir /lib64
 cp /lib/ld-musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
 
 # install x-ui
-bash <(curl -Ls https://raw.githubusercontent.com/Lynn-Becky/Alpine-x-ui/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/smileboy86/Alpine-x-ui/main/install.sh)
 
 # repair datebase
-curl -Ls https://raw.githubusercontent.com/Lynn-Becky/Alpine-x-ui/main/Dependency/x-ui.db -o x-ui.db
+curl -Ls https://raw.githubusercontent.com/smileboy86/Alpine-x-ui/main/Dependency/x-ui.db -o x-ui.db
 mv x-ui.db /etc/x-ui/
 chown 501.dialout /etc/x-ui/x-ui.db
 
